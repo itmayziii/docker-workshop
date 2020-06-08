@@ -186,3 +186,28 @@ docker run -dit --name my-docker-site-2 -p 8090:80 my-docker-site:v0.0.2
 
 We can now verify we have 2 Nginx containers running, one without our redirect at [localhost:8080](http://localhost:8080)
 and another with our redirect at [localhost:8090](http://localhost:8090).
+
+# Learn How to Publish Docker Image to a Registry
+[Publishing Docs](https://docs.docker.com/docker-hub/publish/publish/).
+
+This step is actually really easy, if you wanted to publish to a docker registry like Docker Hub then just create an account
+on Docker Hub and login.
+```bash
+docker login
+```
+
+Once you are logged in you can now push your images
+```bash
+docker push my-docker-site:v0.0.2
+```
+
+Some registries offer free public images but require you to pay a price if you plan on publishing private images. If you
+are publishing images for your organization it is probably best for you to be using private registries.
+
+## Alternatives to Docker Hub
+There are obviously more registries than Docker's official one. Some of them offer security scans, and some of them offer more
+storage. Pick the one that works best for your team's needs.
+
+Some alternatives:
+* [GCP Registry](https://cloud.google.com/container-registry)
+* [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html)
