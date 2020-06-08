@@ -1,13 +1,13 @@
 const config = {
   gatsby: {
-    pathPrefix: '/docker-workshop',
-    siteUrl: 'https://itmayziii.github.io/docker-workshop',
+    pathPrefix: '/',
+    siteUrl: 'https://docker-workshop.com',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
     logo: 'https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png',
-    logoLink: 'https://itmayziii.github.io/docker-workshop',
+    logoLink: 'https://docker-workshop.com',
     title:
       "Docker Workshop",
     githubUrl: 'https://github.com/itmayziii/docker-workshop',
@@ -47,13 +47,13 @@ const config = {
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://itmayziii.github.io/docker-workshop'>Docker </a><div class='greenCircle'></div><a href='https://itmayziii.github.io/docker-workshop'>Workshop</a>",
+      "<a href='https://docker-workshop.com/'>Docker </a><div class='greenCircle'></div><a href='https://docker-workshop.com/'>Workshop</a>",
   },
   siteMetadata: {
     title: 'Docker Workshop | Tommy May III',
     description: 'Container workshop focused around Docker',
     ogImage: null,
-    docsLocation: 'https://itmayziii.github.io/docker-workshop/tree/master/content',
+    docsLocation: '',
     favicon: 'https://docs.docker.com/favicons/docs@2x.ico',
   },
   pwa: {
