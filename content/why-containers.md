@@ -53,5 +53,21 @@ is just important for you to know that these two technologies are not exclusive.
 together especially in elevated environments. Take a look at [Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/)
 for instance where the "nodes" are essentially VMs and the "pods" are usually containers running on top of the nodes.
 
-# Immutability
+# Images and Immutability
+You might hear people talking about how containers are immutable. What those people really mean is that images are immutable.
 
+We have not talked about images until this point so let's go over what an image is:
+* Read-only template with instructions for creating a Docker container.
+* Images are often based on other images i.e. the bitnami/laravel image is likely based off of the PHP image.
+* Created with [Dockerfiles](https://docs.docker.com/engine/reference/builder/).
+
+Containers themselves can be thought of as an instance of an image. When we hear people talking about immutability it means
+that when creating containers from images you are guaranteed to get identical containers from the same image.
+
+## Why Do We Care About Immutability
+Imagine what would happen if we could not guarantee the state of each container. A production ready application might be
+running hundreds of application instances (containers). If every instance of the application could be different, then each
+request that is handled by the cluster of applications could potentially give a different result. With each instance of
+the application being identical we can find comfort in knowing bugs are not likely to pop up in just 1 instance. If
+we find a bug then it likely exists on every instance and therefore easier to debug and squash. Compare this to the days
+before containers were mainstream, where you would always be uncertain if one of your many servers was mis-configured.

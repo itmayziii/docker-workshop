@@ -10,7 +10,7 @@ const config = {
     logoLink: 'https://docker-workshop.com',
     title:
       "Docker Workshop",
-    githubUrl: 'https://github.com/itmayziii/docker-workshop',
+    githubUrl: 'https://github.com/itmayziii/docker-workshop/tree/gh-pages',
     helpUrl: '',
     tweetText: '',
     social: `
@@ -36,9 +36,10 @@ const config = {
       '/introduction', // add trailing slash if enabled above
       '/quick-examples', // add trailing slash if enabled above
       '/why-containers',
+      '/containers-in-practice',
     ],
     collapsedNav: [
-      '/why-containers', // add trailing slash if enabled above
+      '/containers-in-practice', // add trailing slash if enabled above
     ],
     links: [
       { text: 'Docker Docs', link: 'https://docs.docker.com/' },

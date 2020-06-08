@@ -6,7 +6,8 @@ metaDescription: "Examples to highlight the power of docker"
 
 Here are some quick examples to show how easy starting applications with containers can be. You ar encouraged to run
 these yourself. It is good to get into the habit of typing out these commands instead of copy/paste. Don't worry too much
-about the command line options passed to the docker commands for now. We will go over these more in depth later on.
+about the command line options passed to the docker commands for now. We will go over the details of these commands in
+the [containers in practice section](containers-in-practice).
 
 Keep in mind the alternative to these examples is often running each piece of software locally which is likely to be
 different than your coworkers/productions setup. Plus if you were to need to run multiple instances of this software you would likely
