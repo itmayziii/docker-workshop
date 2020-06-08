@@ -34,10 +34,11 @@ const config = {
   sidebar: {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/quick-examples', // add trailing slash if enabled above
+      '/why-containers',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      '/why-containers', // add trailing slash if enabled above
     ],
     links: [
       { text: 'Docker Docs', link: 'https://docs.docker.com/' },
